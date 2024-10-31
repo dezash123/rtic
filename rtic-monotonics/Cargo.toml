@@ -61,7 +61,7 @@ nrf5340-net-pac = { version = "0.12.2", optional = true }
 nrf9160-pac = { version = "0.12.2", optional = true }
 
 # STM32
-stm32-metapac = { version = "15.0.0", optional = true }
+stm32-metapac = { git = "https://github.com/embassy-rs/stm32-data-generated.git", version = "15.0.0", optional = true }
 
 # i.MX RT
 imxrt-ral = { version = "0.5.3", optional = true }
@@ -74,7 +74,7 @@ riscv = {version = "0.12.1", optional = true }
 [build-dependencies]
 proc-macro2 = { version = "1.0.36", optional = true }
 quote = { version = "1.0.15", optional = true }
-stm32-metapac = { version = "15.0.0", default-features = false, features = [
+stm32-metapac = { git = "https://github.com/embassy-rs/stm32-data-generated.git", version = "15.0.0", default-features = false, features = [
     "metadata",
 ], optional = true }
 
@@ -1046,6 +1046,26 @@ stm32h7b3qi = ["dep:cortex-m", "stm32-metapac/stm32h7b3qi"]
 stm32h7b3ri = ["dep:cortex-m", "stm32-metapac/stm32h7b3ri"]
 stm32h7b3vi = ["dep:cortex-m", "stm32-metapac/stm32h7b3vi"]
 stm32h7b3zi = ["dep:cortex-m", "stm32-metapac/stm32h7b3zi"]
+stm32h7r3a8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3a8"]
+stm32h7r3i8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3i8"]
+stm32h7r3l8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3l8"]
+stm32h7r3r8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3r8"]
+stm32h7r3v8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3v8"]
+stm32h7r3z8 = ["dep:cortex-m", "stm32-metapac/stm32h7r3z8"]
+stm32h7r7a8 = ["dep:cortex-m", "stm32-metapac/stm32h7r7a8"]
+stm32h7r7i8 = ["dep:cortex-m", "stm32-metapac/stm32h7r7i8"]
+stm32h7r7l8 = ["dep:cortex-m", "stm32-metapac/stm32h7r7l8"]
+stm32h7r7z8 = ["dep:cortex-m", "stm32-metapac/stm32h7r7z8"]
+stm32h7s3a8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3a8"]
+stm32h7s3i8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3i8"]
+stm32h7s3l8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3l8"]
+stm32h7s3r8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3r8"]
+stm32h7s3v8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3v8"]
+stm32h7s3z8 = ["dep:cortex-m", "stm32-metapac/stm32h7s3z8"]
+stm32h7s7a8 = ["dep:cortex-m", "stm32-metapac/stm32h7s7a8"]
+stm32h7s7i8 = ["dep:cortex-m", "stm32-metapac/stm32h7s7i8"]
+stm32h7s7l8 = ["dep:cortex-m", "stm32-metapac/stm32h7s7l8"]
+stm32h7s7z8 = ["dep:cortex-m", "stm32-metapac/stm32h7s7z8"]
 stm32l010c6 = ["dep:cortex-m", "stm32-metapac/stm32l010c6"]
 stm32l010f4 = ["dep:cortex-m", "stm32-metapac/stm32l010f4"]
 stm32l010k4 = ["dep:cortex-m", "stm32-metapac/stm32l010k4"]
